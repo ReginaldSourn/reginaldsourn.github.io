@@ -1,0 +1,17 @@
+baseURL = 'https://reginaldsourn.github.io/'
+languageCode = 'en-us'
+title = 'Rithy Sourn'
+
+[params]
+  name = "Rithy Sourn"
+  tagline = "IoT Developer & Electronics Engineer"
+  description = "Building hardware and software solutions from Phnom Penh, Cambodia."
+  email = "sourn.rithy@gmail.com"
+  phone = "+85512520266"
+  location = "Phnom Penh, Cambodia"
+  github = "https://github.com/reginaldsourn"
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    noClasses = true

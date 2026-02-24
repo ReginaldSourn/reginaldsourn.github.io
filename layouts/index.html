@@ -1,0 +1,181 @@
+{{ define "main" }}
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__inner container">
+    <div class="hero__content">
+      <p class="hero__label">Based in Phnom Penh, Cambodia</p>
+      <h1 class="hero__name">{{ .Site.Params.name }}</h1>
+      <p class="hero__tagline">{{ .Site.Params.tagline }}</p>
+      <p class="hero__desc">{{ .Site.Params.description }}</p>
+      <div class="hero__cta">
+        <a href="/#experience" class="btn btn--primary">View Work</a>
+        <a href="mailto:{{ .Site.Params.email }}" class="btn btn--ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero__photo">
+      <div class="hero__photo-frame">
+        <img src="/profile.jpg" alt="{{ .Site.Params.name }}" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="container">
+    <h2 class="section__title">Skills</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <span class="skill-card__icon">⬡</span>
+        <h3 class="skill-card__title">Electronics</h3>
+        <p class="skill-card__body">Circuit & PCB design, Logic & Analog analysis, ESD, RF, DC power supply, global component sourcing.</p>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-card__icon">⬡</span>
+        <h3 class="skill-card__title">IoT</h3>
+        <p class="skill-card__body">Wi-Fi, BLE, Bluetooth Classic, 4G/LTE, AT command testing, LoRaWAN fundamentals.</p>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-card__icon">⬡</span>
+        <h3 class="skill-card__title">Firmware & Software</h3>
+        <p class="skill-card__body">C, Python, Go (REST API), C++, C#, Java, Dart, Kotlin, Verilog, Shell, JavaScript.</p>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-card__icon">⬡</span>
+        <h3 class="skill-card__title">Mechanics</h3>
+        <p class="skill-card__body">3D CAD design, material fit design, mechanical principles and assembly.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section section--alt" id="experience">
+  <div class="container">
+    <h2 class="section__title">Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline__item">
+        <div class="timeline__meta">
+          <span class="timeline__date">Aug 2024 — Present</span>
+        </div>
+        <div class="timeline__content">
+          <h3 class="timeline__company">AiBodia Co., Ltd.</h3>
+          <p class="timeline__role">IoT Developer</p>
+          <ul class="timeline__list">
+            <li>Go REST API backend development</li>
+            <li>Integrate offline machines to the internet</li>
+            <li>Machine streaming & OTA management</li>
+            <li>Custom machine configuration</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__meta">
+          <span class="timeline__date">Dec 2023 — Feb 2024</span>
+        </div>
+        <div class="timeline__content">
+          <h3 class="timeline__company">Oyika Co., Ltd.</h3>
+          <p class="timeline__role">Firmware Developer</p>
+          <ul class="timeline__list">
+            <li>EV bike battery firmware development</li>
+            <li>UI application development</li>
+            <li>Hardware failure analysis and product improvement</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__meta">
+          <span class="timeline__date">Apr 2022 — Jan 2023</span>
+        </div>
+        <div class="timeline__content">
+          <h3 class="timeline__company">AIFarm Robotics Factory</h3>
+          <p class="timeline__role">R&D Coordinator</p>
+          <ul class="timeline__list">
+            <li>Led and coordinated 30+ engineers</li>
+            <li>ROS2 development & robotics research</li>
+            <li>Project direction and team management</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__meta">
+          <span class="timeline__date">Jan 2019 — Jan 2022</span>
+        </div>
+        <div class="timeline__content">
+          <h3 class="timeline__company">Vitamin Air</h3>
+          <p class="timeline__role">R&D Technology</p>
+          <ul class="timeline__list">
+            <li>AirWater and Drone R&D for remote communities</li>
+            <li>3D CAD design & tool development</li>
+            <li>Renewable energy systems (solar & battery)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__meta">
+          <span class="timeline__date">Oct 2019 — Jan 2020</span>
+        </div>
+        <div class="timeline__content">
+          <h3 class="timeline__company">KOOMPI</h3>
+          <p class="timeline__role">Open-Source Developer</p>
+          <ul class="timeline__list">
+            <li>Software & hardware integration on Linux</li>
+            <li>Python, C, C++, Qt development</li>
+            <li>Open-hardware R&D</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__meta">
+          <span class="timeline__date">Jan 2014 — Jan 2017</span>
+        </div>
+        <div class="timeline__content">
+          <h3 class="timeline__company">Arrowdot</h3>
+          <p class="timeline__role">R&D Technology</p>
+          <ul class="timeline__list">
+            <li>Raspberry Pi & Arduino development</li>
+            <li>Python, Shell scripting, graphic design</li>
+            <li>3D CAD design</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container contact">
+    <h2 class="section__title">Contact</h2>
+    <p class="contact__desc">Open to new opportunities, collaborations, and interesting problems.</p>
+    <div class="contact__links">
+      <a href="mailto:{{ .Site.Params.email }}" class="contact__link">
+        <span class="contact__link-label">Email</span>
+        <span class="contact__link-value">{{ .Site.Params.email }}</span>
+      </a>
+      <a href="tel:{{ .Site.Params.phone }}" class="contact__link">
+        <span class="contact__link-label">Phone</span>
+        <span class="contact__link-value">{{ .Site.Params.phone }}</span>
+      </a>
+      <div class="contact__link">
+        <span class="contact__link-label">Location</span>
+        <span class="contact__link-value">{{ .Site.Params.location }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
