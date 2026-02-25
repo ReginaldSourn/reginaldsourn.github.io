@@ -4,14 +4,17 @@ title = 'Rithy Sourn'
 
 [params]
   name = "Rithy Sourn"
-  tagline = "IoT Developer & Electronics Engineer"
-  description = "Building hardware and software solutions from Phnom Penh, Cambodia."
+  tagline = "IoT Developer & Specialist"
+  description = "Specializing in low-power hardware, LORA, Wi-Fi, 4G, and Wi-Fi HaLow deployments. Building hardware-software solutions from Phnom Penh, Cambodia."
   email = "sourn.rithy@gmail.com"
-  phone = "+85512520266"
   location = "Phnom Penh, Cambodia"
   github = "https://github.com/reginaldsourn"
+  linkedin = "https://www.linkedin.com/in/sourn-rithy-013172a8"
 
 [markup]
   [markup.highlight]
     style = "monokai"
     noClasses = true
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

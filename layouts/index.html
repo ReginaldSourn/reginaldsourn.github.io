@@ -29,26 +29,44 @@
 
       <div class="skill-card">
         <span class="skill-card__icon">⬡</span>
-        <h3 class="skill-card__title">Electronics</h3>
-        <p class="skill-card__body">Circuit & PCB design, Logic & Analog analysis, ESD, RF, DC power supply, global component sourcing.</p>
+        <h3 class="skill-card__title">Technical</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">IoT Architecture</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C / C++</span>
+          <span class="skill-tag">Go</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">RESTful APIs</span>
+          <span class="skill-tag">MQTT</span>
+          <span class="skill-tag">FreeRTOS</span>
+          <span class="skill-tag">BLE</span>
+          <span class="skill-tag">LTE / 4G</span>
+          <span class="skill-tag">Wi-Fi HaLow</span>
+          <span class="skill-tag">LORA</span>
+          <span class="skill-tag">SDR</span>
+          <span class="skill-tag">Low-Power Devices</span>
+          <span class="skill-tag">Agile / Scrum</span>
+        </div>
       </div>
 
       <div class="skill-card">
         <span class="skill-card__icon">⬡</span>
-        <h3 class="skill-card__title">IoT</h3>
-        <p class="skill-card__body">Wi-Fi, BLE, Bluetooth Classic, 4G/LTE, AT command testing, LoRaWAN fundamentals.</p>
+        <h3 class="skill-card__title">Professional</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Communications</span>
+          <span class="skill-tag">Adaptability</span>
+          <span class="skill-tag">Strategic Planning</span>
+        </div>
       </div>
 
       <div class="skill-card">
         <span class="skill-card__icon">⬡</span>
-        <h3 class="skill-card__title">Firmware & Software</h3>
-        <p class="skill-card__body">C, Python, Go (REST API), C++, C#, Java, Dart, Kotlin, Verilog, Shell, JavaScript.</p>
-      </div>
-
-      <div class="skill-card">
-        <span class="skill-card__icon">⬡</span>
-        <h3 class="skill-card__title">Mechanics</h3>
-        <p class="skill-card__body">3D CAD design, material fit design, mechanical principles and assembly.</p>
+        <h3 class="skill-card__title">Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Khmer — Native</span>
+          <span class="skill-tag">English — Advanced</span>
+          <span class="skill-tag">French — Passive</span>
+        </div>
       </div>
 
     </div>
@@ -66,7 +84,7 @@
           <span class="timeline__date">Aug 2024 — Present</span>
         </div>
         <div class="timeline__content">
-          <h3 class="timeline__company">AiBodia Co., Ltd.</h3>
+          <h3 class="timeline__company">AIBODIA Co. Ltd</h3>
           <p class="timeline__role">IoT Developer</p>
           <ul class="timeline__list">
             <li>Go REST API backend development</li>
@@ -82,7 +100,7 @@
           <span class="timeline__date">Dec 2023 — Feb 2024</span>
         </div>
         <div class="timeline__content">
-          <h3 class="timeline__company">Oyika Co., Ltd.</h3>
+          <h3 class="timeline__company">Oyika Pte. Ltd.</h3>
           <p class="timeline__role">Firmware Developer</p>
           <ul class="timeline__list">
             <li>EV bike battery firmware development</li>
@@ -112,10 +130,10 @@
           <span class="timeline__date">Jan 2019 — Jan 2022</span>
         </div>
         <div class="timeline__content">
-          <h3 class="timeline__company">Vitamin Air</h3>
-          <p class="timeline__role">R&D Technology</p>
+          <h3 class="timeline__company">Vitamin Air <span class="timeline__location">— Kompong Seila</span></h3>
+          <p class="timeline__role">R&D Engineer</p>
           <ul class="timeline__list">
-            <li>AirWater and Drone R&D for remote communities</li>
+            <li>AirWater and drone R&D for remote communities</li>
             <li>3D CAD design & tool development</li>
             <li>Renewable energy systems (solar & battery)</li>
           </ul>
@@ -143,7 +161,7 @@
         </div>
         <div class="timeline__content">
           <h3 class="timeline__company">Arrowdot</h3>
-          <p class="timeline__role">R&D Technology</p>
+          <p class="timeline__role">R&D Technology Developer</p>
           <ul class="timeline__list">
             <li>Raspberry Pi & Arduino development</li>
             <li>Python, Shell scripting, graphic design</li>
@@ -153,6 +171,34 @@
       </div>
 
     </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section" id="education">
+  <div class="container">
+    <h2 class="section__title">Education</h2>
+    <div class="timeline">
+
+      <div class="timeline__item">
+        <div class="timeline__meta">
+          <span class="timeline__date">2013 — 2018</span>
+        </div>
+        <div class="timeline__content">
+          <h3 class="timeline__company">Preah Kosomak Polytechnic Institute</h3>
+          <p class="timeline__role">Bachelor in Electronic Engineering</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section section--alt" id="about">
+  <div class="container container--narrow">
+    <h2 class="section__title">About</h2>
+    <p class="about__text">Problem-solver drawn to the hardware-software intersection. Inspired by the constraints of low-power systems and the ingenuity they demand — I work best when the environment pushes back. My approach is grounded in deep research and hands-on experimentation: building things that work in the field, not just on a bench.</p>
   </div>
 </section>
 
@@ -166,9 +212,9 @@
         <span class="contact__link-label">Email</span>
         <span class="contact__link-value">{{ .Site.Params.email }}</span>
       </a>
-      <a href="tel:{{ .Site.Params.phone }}" class="contact__link">
-        <span class="contact__link-label">Phone</span>
-        <span class="contact__link-value">{{ .Site.Params.phone }}</span>
+      <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener" class="contact__link">
+        <span class="contact__link-label">LinkedIn</span>
+        <span class="contact__link-value">sourn-rithy</span>
       </a>
       <div class="contact__link">
         <span class="contact__link-label">Location</span>
